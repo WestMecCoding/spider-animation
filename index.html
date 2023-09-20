@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scary Door Choice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Creepster', cursive;
+    }
+
+
+
+    div.container {
+      background: linear-gradient(135deg, orange 10%, white 50%);
+      height: 100vh;
+      width: 80vw;
+      margin: auto;
+      text-align: center;
+    }
+
+
+    div#spider-animation {
+      position: relative;
+      /* border: 1px solid red; */
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    img#spider {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      animation: slideDown 5s ease-in-out infinite;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(50px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <p>Local storage test:<span id="l-s-test"></span></p>
+      <p>Session Storage test:<span id="s-s-test"></span></p> -->
+
+    <div id="spider-animation">
+      <img id="spider-web" src="./halloween-spider-web.png" width="80" height="100" alt="spider-web" />
+      <img id="spider" src="./halloween-spider-noweb.png" width="80" height="100" alt="spider" />
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
